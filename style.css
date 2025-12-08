@@ -1,0 +1,322 @@
+:root {
+    --color-primary: #A34E24; /* Earthy Ochre/Rust */
+    --color-secondary: #000000; /* Deep Earth Black */
+    --color-background: #F9F9F9; /* Off-White/Neutral */
+    --color-text: #333333;
+    --color-light-accent: #E0E0D8; /* Pale Stone */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+    margin-bottom: 0.5em;
+}
+
+h1, .hero-details, .subtitle {
+    text-align: center
+    }
+    
+h2 {
+    font-size: 2.5em;
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+ul {
+    padding: 0 50px;
+        }
+
+/* --- Header & Navigation --- */
+.header {
+    background: var(--color-background);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-light-accent);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--color-text);
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+.nav-cta {
+    background: var(--color-primary);
+    color: var(--color-background) !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.nav-cta:hover {
+    background: #7a3a1b; /* Darker primary for hover */
+}
+
+
+/* --- Call-to-Action Buttons (Reusable) --- */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--color-primary);
+    color: var(--color-background) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+
+/* --- Hero Section --- */
+.hero {
+    background: var(--color-light-accent); /* Soft background for the main visual area */
+    text-align: left;
+    padding: 80px 20px;
+    margin-bottom: 60px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    line-height: 1.1;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: var(--color-secondary);
+}
+
+.subtitle {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.hero-details p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.hero-cta {
+    margin-top: 30px;
+}
+
+
+/* --- General Section Styling --- */
+.section {
+    padding: 60px 0;
+}
+
+/* --- About Section (Grid) --- */
+.about-section {
+    background-color: var(--color-background);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.grid-item {
+    padding: 20px;
+}
+
+.grid-item h3 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+/* --- Cfp Section (Grid) --- */
+.cfp-section {
+    background-color: var(--color-light-accent);
+}
+
+/* --- Cfp Section (Grid) --- */
+.related-works-section {
+    background-color: var(--color-background);
+}
+
+
+/* --- Speakers Section (Cards) --- */
+.speakers-section {
+    background-color: var(--color-light-accent);
+}
+
+.speaker-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.speaker-card {
+    background: var(--color-background);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 350px;
+}
+
+.speaker-image {
+    width: 150px;
+    height: 150px;
+    background: var(--color-light-accent); /* Placeholder background */
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+}
+
+img {
+  border-radius: 50%;
+}
+
+.speaker-card h3 {
+    margin-top: 10px;
+}
+
+.speaker-title {
+    color: var(--color-primary);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* --- Register Section (Form) --- */
+.register-section {
+    text-align: center;
+}
+
+.paragraph {
+    margin: 0 auto 20px;
+    gap: 20px
+}
+
+.register-section h2, .register-section p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.registration-form {
+    max-width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form select {
+    padding: 12px;
+    border: 1px solid var(--color-light-accent);
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.registration-form .cta-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* --- Footer --- */
+.footer {
+    background: var(--color-secondary);
+    color: var(--color-light-accent);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+    border-top: 5px solid var(--color-primary);
+}
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+
+    .speaker-card-container {
+        gap: 20px;
+    }
+}

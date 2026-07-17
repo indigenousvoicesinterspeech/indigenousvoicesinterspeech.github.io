@@ -202,15 +202,19 @@ ul {
     background-color: var(--color-light-accent);
 }
 
-/* --- Cfp Section (Grid) --- */
-.related-works-section {
+
+.protocol-section {
     background-color: var(--color-background);
+}
+
+.related-works-section {
+    background-color: var(--color-light-accent);
 }
 
 
 /* --- Speakers Section (Cards) --- */
 .speakers-section {
-    background-color: var(--color-light-accent);
+    background-color: var(--color-background);
 }
 
 .speaker-card-container {
@@ -265,6 +269,11 @@ img {
 .paragraph {
     margin: 0 auto 20px;
     gap: 20px
+}
+
+.protocol {
+    font-style: italic;
+    size: 2em;
 }
 
 .register-section h2, .register-section p {

@@ -306,6 +306,18 @@ img {
     border-top: 5px solid var(--color-primary);
 }
 
+
+.paper-title {
+  color: #0000AD;     /* Changes text color */
+  font-size: 1.2em;    /* Changes text size */
+    }
+
+.paper-authors {
+  color: #666666;     /* Changes text color */
+  font-size: 1.1em;    /* Changes text size */
+    }
+
+
 /* --- Media Queries for Responsiveness --- */
 @media (max-width: 768px) {
     .nav {

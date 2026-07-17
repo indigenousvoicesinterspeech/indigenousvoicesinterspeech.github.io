@@ -15,6 +15,17 @@
     padding: 0;
 }
 
+.paper-author {
+  color: #222222;     /* Changes text color */
+  font-size: 14px;    /* Changes text size */
+}
+
+.paper-title {
+  color: #111111;     /* Changes text color */
+  font-size: 16px;    /* Changes text size */
+}
+
+
 body {
     font-family: var(--font-body);
     line-height: 1.6;
